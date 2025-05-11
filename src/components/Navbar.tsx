@@ -24,8 +24,10 @@ const Navbar = () => {
           <a href="#pricing" className="text-sm font-medium hover:text-viral-purple transition-colors">
             Pricing
           </a>
-          <Button className="gradient-bg">
-            Get Started
+          <Button className="gradient-bg" asChild>
+            <a href="https://calendly.com/henrypham-po/30min" target="_blank" rel="noopener noreferrer">
+              Schedule Free Call
+            </a>
           </Button>
         </div>
         
@@ -61,8 +63,10 @@ const Navbar = () => {
           >
             Pricing
           </a>
-          <Button className="w-full gradient-bg">
-            Get Started
+          <Button className="w-full gradient-bg" asChild>
+            <a href="https://calendly.com/henrypham-po/30min" target="_blank" rel="noopener noreferrer">
+              Schedule Free Call
+            </a>
           </Button>
         </div>
       )}

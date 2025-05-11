@@ -2,6 +2,7 @@
 import { Toaster } from "sonner";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import DemoSection from "@/components/DemoSection";
 import HowItWorks from "@/components/HowItWorks";
 import WhoItsFor from "@/components/WhoItsFor";
 import Pricing from "@/components/Pricing";
@@ -15,6 +16,7 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
+        <DemoSection />
         <HowItWorks />
         <WhoItsFor />
         <Pricing />
