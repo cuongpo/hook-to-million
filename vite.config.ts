@@ -4,8 +4,11 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
+// Determine if we're using a custom domain
+const isCustomDomain = process.env.CUSTOM_DOMAIN === 'true' || process.env.NODE_ENV === 'development';
+
 export default defineConfig(({ mode }) => ({  
-  base: process.env.NODE_ENV === 'production' && !process.env.CUSTOM_DOMAIN ? '/hook-to-million/' : '/',
+  base: isCustomDomain ? '/' : '/hook-to-million/',
   server: {
     host: "::",
     port: 8080,
